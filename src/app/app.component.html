@@ -1,7 +1,7 @@
 <h1>Lista de Tareas</h1>
 <p *ngFor='let tarea of listatarea'>
-  <input type="checkbox" class="strikethrough" value="1"/>
-  {{tarea.nombre}}
+  <input name="checkbox" type="checkbox" class="strikethrough" value="1"/>
+  <label for="checkbox">{{tarea.nombre}}</label>
   <button (click)='bajaTarea(tarea)'>Borrar</button>
 </p>
 
